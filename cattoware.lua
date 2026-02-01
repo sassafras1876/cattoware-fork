@@ -277,6 +277,7 @@ function library:CreateWindow(name, size, hidebutton)
     window.Frame.Size = window.size
     window.Frame.AutoButtonColor = false
     window.Frame.Text = ""
+    window.Frame.Modal = true
     window.Frame.BackgroundColor3 = window.theme.backgroundcolor
     window.Frame.AnchorPoint = Vector2.new(0.5, 0.5)
     updateevent.Event:Connect(function(theme)
